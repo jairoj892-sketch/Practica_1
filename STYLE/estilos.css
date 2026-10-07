@@ -22,9 +22,16 @@ h1 {
     max-width: 900px;
     margin: auto;
 }
-.contenedor div { background-color: #3498db; 
+.contenedor div { 
+    background-color: #3498db; 
     color: white;
      padding: 30px 20px;
       border-radius: 10px; }
 
-.contenedor div:hover { background-color: #2c3e50; transform: scale(1.03); }
+.contenedor div:hover { 
+    background-color: #2c3e50;
+     transform: scale(1.03); }
+
+@media (max-width: 700px) {
+    .contenedor { grid-template-columns: repeat(2, 1fr); }
+}
